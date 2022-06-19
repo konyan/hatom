@@ -1,3 +1,5 @@
+import Button from "../../atoms/button";
+
 const InfoPage = () => {
   return (
     <div className="my-8 p-5 lg:container m-auto">
@@ -15,12 +17,7 @@ const InfoPage = () => {
         </div>
 
         <div>
-          <button
-            type="button"
-            className="bg-gradient-to-r from-green-700 to-green-900  inline-flex items-center px-3 py-2  border-transparent text-sm leading-4 font-medium rounded-md shadow-sm text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
-          >
-            Buy Hatom Tokens
-          </button>
+          <Button btnName="Buy Hatom Tokens" />
         </div>
       </div>
       <div>
