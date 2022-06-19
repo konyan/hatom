@@ -1,18 +1,18 @@
 import React from "react";
 import Lottie from "react-lottie";
-import magicAnimation from "../../assets/json/magic.json";
+import loopAnimation from "../../assets/json/loop.json";
 
-const BookingLoadingIcon = () => {
+const LoopAnimationIcon = ({ width, height }) => {
   const defaultOptions = {
     loop: true,
     autoplay: true,
-    animationData: magicAnimation,
+    animationData: loopAnimation,
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
     },
   };
 
-  return <Lottie options={defaultOptions} className="-z-30 absolute w-full" />;
+  return <Lottie options={defaultOptions} width={width} height={height} />;
 };
 
-export default BookingLoadingIcon;
+export default LoopAnimationIcon;

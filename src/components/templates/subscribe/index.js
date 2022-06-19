@@ -1,31 +1,15 @@
 import Button from "../../atoms/button";
 
-/*
-  This example requires Tailwind CSS v2.0+ 
-  
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
-*/
 export default function Subscribe() {
   return (
     <div className="w-full">
-      <div className="relative py-10 bg-gradient-to-r from-green-900 to-indigo-900 overflow-hidden shadow-xl sm:px-12 sm:py-12">
+      <div className="relative py-10 bg-gradient-to-r from-green-900 to-indigo-900 overflow-hidden shadow-xl sm:px-12 sm:py-12 px-8 text-center">
         <div className="relative">
           <div className="sm:text-center">
-            <h2 className="text-3xl font-extrabold text-white tracking-tight sm:text-4xl">
+            <h2 className="text-3xl font-extrabold text-white tracking-tight sm:text-4xl text-center">
               Subscribe to Hatome newsletter
             </h2>
-            <p className="mt-2 mx-auto max-w-2xl text-lg text-indigo-200">
+            <p className="mt-2 mx-auto max-w-2xl text-lg text-indigo-200 text-center">
               Sagittis scelerisque nulla cursus in enim consectetur quam.
             </p>
           </div>
@@ -40,9 +24,10 @@ export default function Subscribe() {
               />
               <Button
                 btnName="Subscribe"
-                className="absolute right-2.5 bottom-1"
+                className="md:absolute md:right-2.5 md:bottom-1.5 hidden md:block"
               />
             </div>
+            <Button btnName="Subscribe" className="md:hidden m-auto mt-4" />
           </form>
         </div>
       </div>
