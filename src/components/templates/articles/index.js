@@ -7,6 +7,9 @@ import "swiper/css/navigation";
 import "./index.css";
 
 import { FreeMode, Autoplay } from "swiper";
+import { ArrowRightIcon } from "@heroicons/react/outline";
+import useCheckMobileScreen from "../../../assets/hooks/useCheckMobileScreen";
+import Card from "../../molecules/card/card";
 
 const collections = [
   {
@@ -102,6 +105,8 @@ const collections = [
 ];
 
 const ArticlesPage = () => {
+  const isMobile = useCheckMobileScreen();
+
   return (
     <section
       aria-labelledby="collection-articles"
@@ -114,41 +119,42 @@ const ArticlesPage = () => {
         Understanding Hatom
       </h2>
 
-      <Swiper
-        slidesPerView={3}
-        spaceBetween={30}
-        slidesPerGroup={3}
-        loop={true}
-        autoplay={true}
-        modules={[FreeMode, Autoplay]}
-        className="mySwiper mt-10 space-y-12 "
-        freeMode={true}
-      >
-        {collections.map((collection) => (
-          <SwiperSlide
-            key={collection.name}
-            href={collection.href}
-            className="group block"
-          >
-            <div
-              aria-hidden="true"
-              className="aspect-w-3 aspect-h-2 rounded-lg overflow-hidden group-hover:opacity-75 lg:aspect-w-5 lg:aspect-h-6"
+      {isMobile ? (
+        <div className="mt-6 grid grid-cols-1 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+          {collections.splice(0, 3).map((collection) => (
+            <Card
+              src={collection.imageSrc}
+              name={collection.name}
+              description={collection.description}
+            />
+          ))}
+        </div>
+      ) : (
+        <Swiper
+          slidesPerView={3}
+          spaceBetween={30}
+          slidesPerGroup={3}
+          loop={true}
+          autoplay={true}
+          modules={[FreeMode, Autoplay]}
+          className="mySwiper mt-10 space-y-12 "
+          freeMode={true}
+        >
+          {collections.map((collection) => (
+            <SwiperSlide
+              key={collection.name}
+              href={collection.href}
+              className="group block"
             >
-              <img
+              <Card
                 src={collection.imageSrc}
-                alt={collection.imageAlt}
-                className="w-full h-full object-center object-cover"
+                name={collection.name}
+                description={collection.description}
               />
-            </div>
-            <h3 className="mt-4 text-base font-semibold text-gray-900">
-              {collection.name}
-            </h3>
-            <p className="mt-2 text-sm text-gray-500">
-              {collection.description}
-            </p>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      )}
     </section>
   );
 };
