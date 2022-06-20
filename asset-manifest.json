@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.cc25d71f.css",
-    "main.js": "/static/js/main.53bffd63.js",
-    "static/js/787.26c5c3fe.chunk.js": "/static/js/787.26c5c3fe.chunk.js",
-    "static/media/bg.svg": "/static/media/bg.8fa2cb119f57ebd72c0e6ae5740bf959.svg",
-    "static/media/coin.png": "/static/media/coin.f4bdc12772514646f981.png",
-    "static/media/people.svg": "/static/media/people.6078783c99b81f3656681c6efd0bebcc.svg",
-    "static/media/machine.svg": "/static/media/machine.e98d9a53a8623f22c469853ac80f024f.svg",
-    "static/media/maiar.svg": "/static/media/maiar.b32352f4677960f19dcc6f69c56d1fa5.svg",
-    "static/media/logo.svg": "/static/media/logo.3f181f6440635799aa0d2bf403bae28e.svg",
-    "index.html": "/index.html",
-    "main.cc25d71f.css.map": "/static/css/main.cc25d71f.css.map",
-    "main.53bffd63.js.map": "/static/js/main.53bffd63.js.map",
-    "787.26c5c3fe.chunk.js.map": "/static/js/787.26c5c3fe.chunk.js.map"
+    "main.css": "/hatom/static/css/main.cc25d71f.css",
+    "main.js": "/hatom/static/js/main.6debad32.js",
+    "static/js/787.26c5c3fe.chunk.js": "/hatom/static/js/787.26c5c3fe.chunk.js",
+    "static/media/bg.svg": "/hatom/static/media/bg.8fa2cb119f57ebd72c0e6ae5740bf959.svg",
+    "static/media/coin.png": "/hatom/static/media/coin.f4bdc12772514646f981.png",
+    "static/media/people.svg": "/hatom/static/media/people.6078783c99b81f3656681c6efd0bebcc.svg",
+    "static/media/machine.svg": "/hatom/static/media/machine.e98d9a53a8623f22c469853ac80f024f.svg",
+    "static/media/maiar.svg": "/hatom/static/media/maiar.b32352f4677960f19dcc6f69c56d1fa5.svg",
+    "static/media/logo.svg": "/hatom/static/media/logo.3f181f6440635799aa0d2bf403bae28e.svg",
+    "index.html": "/hatom/index.html",
+    "main.cc25d71f.css.map": "/hatom/static/css/main.cc25d71f.css.map",
+    "main.6debad32.js.map": "/hatom/static/js/main.6debad32.js.map",
+    "787.26c5c3fe.chunk.js.map": "/hatom/static/js/787.26c5c3fe.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cc25d71f.css",
-    "static/js/main.53bffd63.js"
+    "static/js/main.6debad32.js"
   ]
 }
